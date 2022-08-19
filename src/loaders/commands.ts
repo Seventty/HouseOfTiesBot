@@ -1,5 +1,5 @@
 import Logger from "./logger";
-import { start, heya, say, rsay, fsay } from "@/commands";
+import { start, /* heya, say, rsay, fsay  */} from "@/commands";
 
 export default async ({ bot }) => {
   Logger.info("Commands loaded ✅");
@@ -8,7 +8,7 @@ export default async ({ bot }) => {
     // Whole programming logic within this section
     start(bot, message);
   });
-
+/* 
   bot.onText(/^\/heya/, async (message) => {
     heya(bot, message);
   });
@@ -23,5 +23,5 @@ export default async ({ bot }) => {
 
   bot.onText(/^\/fsay/, async (message) => {
     fsay(bot, message);
-  });
+  }); */
 };
